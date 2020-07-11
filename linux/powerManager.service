@@ -1,0 +1,15 @@
+[Unit]
+Description=powerManager server daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/jdk1.8.0_25/bin/java -jar /home/powerManager-1.0-SNAPSHOT.jar
+Restart=1
+KillMode=process
+RestartSec=1s
+StandardInput=null
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
