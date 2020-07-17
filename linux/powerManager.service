@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/home/jdk1.8.0_25/bin/java -jar /home/powerManager-1.0-SNAPSHOT.jar
+ExecStart=/home/jdk1.8.0_25/bin/java -jar /home/powerManager-1.0.1.jar
 Restart=1
 KillMode=process
 RestartSec=1s
